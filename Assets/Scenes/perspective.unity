@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465776, g: 0.49641562, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028475, g: 0.22571503, b: 0.30692402, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50.000004, y: -137.845, z: 0}
 --- !u!1 &352898096
 GameObject:
@@ -195,7 +195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &352898097
 AudioListener:
   m_ObjectHideFlags: 0
@@ -234,13 +234,14 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 1
-  m_TargetEye: 3
+  m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -256,7 +257,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -303,19 +304,20 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 120
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967279
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
+  m_TargetEye: 0
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -326,15 +328,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.21541473, y: -0.0046017673, z: 0.0010151324, w: 0.97651136}
-  m_LocalPosition: {x: -0.59, y: 5.21, z: -7.09}
+  m_LocalRotation: {x: 0.2138473, y: -0.11767545, z: 0.025958335, w: 0.96940607}
+  m_LocalPosition: {x: -2.3, y: 4.2, z: -9.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469100152}
   - {fileID: 1401209295}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 24.88, y: -0.54, z: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 24.880001, y: -13.842001, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,7 +408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1024189883
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -416,9 +418,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1024189884
@@ -486,7 +488,7 @@ GameObject:
   - component: {fileID: 1150745982}
   - component: {fileID: 1150745981}
   - component: {fileID: 1150745980}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: RED_Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +559,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401209294
 GameObject:
@@ -598,14 +600,14 @@ Projector:
   serializedVersion: 2
   m_NearClipPlane: 0.01
   m_FarClipPlane: 100
-  m_FieldOfView: 60
+  m_FieldOfView: 120
   m_AspectRatio: 1.77
   m_Orthographic: 0
   m_OrthographicSize: 10
   m_Material: {fileID: 2100000, guid: 8d6b8a29d3dc564449b0e735868ed2a8, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
 --- !u!1 &1469100151
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,19 +655,20 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 100
-  field of view: 60
+  field of view: 120
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 272
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c6cd386ba0e97834aaf6d7cf8955c166, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -697,9 +700,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1475315294
@@ -754,7 +757,7 @@ Transform:
   m_LocalScale: {x: 1.77, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1795534818
 GameObject:
@@ -767,7 +770,7 @@ GameObject:
   - component: {fileID: 1795534821}
   - component: {fileID: 1795534820}
   - component: {fileID: 1795534819}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: Green_Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1853025199
 GameObject:
@@ -851,7 +854,7 @@ GameObject:
   - component: {fileID: 1853025202}
   - component: {fileID: 1853025201}
   - component: {fileID: 1853025200}
-  m_Layer: 8
+  m_Layer: 4
   m_Name: Blue_Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -922,5 +925,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
